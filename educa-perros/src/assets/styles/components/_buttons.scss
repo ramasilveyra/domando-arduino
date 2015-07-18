@@ -1,0 +1,63 @@
+.center {
+  text-align: center;
+}
+
+.button {
+  background: #dd4b39;
+  color: #fff;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  border: 0;
+  margin-top: 20px;
+  transition: all .6s;
+  transform: translateY(100%);
+  opacity: 0;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all .3s ease-out;
+  }
+}
+
+.button:active::before {
+  opacity: 0;
+  transform: scale(1.5);
+}
+
+.button--is-show {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  animation-name: shake;
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.shake:hover {
+  animation-play-state: paused;
+}

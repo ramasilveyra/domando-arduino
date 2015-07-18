@@ -1,0 +1,37 @@
+@include font-face('Open Sans', '../fonts/opensans-regular', 400, normal, ttf);
+@include font-face('fontello', '../fonts/fontello', 400, normal, eot woff ttf svg);
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  margin-right: 10px;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon-guidedog::before {
+  content: '\e800';
+}
+
+.icon-blind::before {
+  content: '\e801';
+}
+
+.icon-female::before {
+  content: '\e802';
+}
+
+.icon-cog::before {
+  content: '\e803';
+}

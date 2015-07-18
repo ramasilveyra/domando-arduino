@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Educa Perros y Viejitas</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.min.css">
+  </head>
+  <body>
+    <div class="educador">
+        <div class="educador__container">
+            <h1 class="educador__title"><span data-letters="Educa Perros y Madres">Educa Perros y Viejitas</span></h1>
+            <ul class="educador__target">
+                <li class="educador__target__item">
+                    <input type="radio" class="educador__target__item__checkbox visuallyhidden" id="dog" name="target" value="osito" checked>
+                    <label for="dog" class="educador__target__item__label icon-guidedog">Osito</label>
+                </li>
+                <li class="educador__target__item">
+                    <input type="radio" class="educador__target__item__checkbox visuallyhidden" id="mother" name="target" value="viejita">
+                    <label for="mother" class="educador__target__item__label icon-female">Viejita</label>
+                </li>
+            </ul>
+            <ul class="educador__container__messages"></ul>
+            <div class="center">
+                <button class="button button--submit shake" style="outline: none;">Detener alarma</button>
+            </div>
+        </div>
+    </div>
+    <div class="settings" style="display:none;">
+        <input type="number" placeholder="Centimetros">
+    </div>
+    <audio loop preload src="media/osito.mp3" class="record record--osito"></audio>
+    <audio loop preload src="media/viejita.mp3" class="record record--viejita"></audio>
+    <script src="scripts/plugins.min.js"></script>
+    <script src="scripts/main.min.js"></script>
+  </body>
+</html>

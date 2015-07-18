@@ -1,0 +1,58 @@
+/*
+ * Modelo de cajas
+ */
+
+html {
+  box-sizing: border-box;
+  background: #fff;
+  padding: 20px;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:focus {
+  outline: thin dotted;
+}
+
+.fonts-loaded body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #2f3238;
+  width: 100%;
+  height: 100%;
+  display: table;
+  color: #fff;
+  overflow: hidden;
+}
+
+.zangano-detected {
+  background: #dd4b39;
+}
+
+@-webkit-viewport {
+  width: device-width;
+}
+
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
